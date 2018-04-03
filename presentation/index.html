@@ -1,65 +1,65 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Docker for Development</title>
+    <title>Docker for Development</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
     <!--<link rel="stylesheet" href="css/custom.css">-->
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="css/hljs-default.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="css/hljs-default.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>Slide 1</section>
+        <section>Slide 2</section>
+      </div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				width: 1920,
-				height: 1080,
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        width: 1920,
+        height: 1080,
 
-				controls: false,
-				progress: false,
-				history: true,
-				transition: 'slide',
-				transitionSpeed: 'fast',
+        controls: false,
+        progress: false,
+        history: true,
+        transition: 'slide',
+        transitionSpeed: 'fast',
 
-				dependencies: [
-					// { src: 'plugin/markdown/marked.js' },
-					// { src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-					{ src: 'plugin/notes-server/client.js', async: true }
-				]
-			});
-			// Manually injecting livereload for Docker purposes
-			document.write('<script src="http://'
-				+ (location.host || 'localhost').split(':')[0]
-				+ ':35729/livereload.js?snipver=1"></'
-				+ 'script>');
-		</script>
-	</body>
+        dependencies: [
+          // { src: 'plugin/markdown/marked.js' },
+          // { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'plugin/notes-server/client.js', async: true }
+        ]
+      });
+      // Manually injecting livereload for Docker purposes
+      document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+        + ':35729/livereload.js?snipver=1"></'
+        + 'script>');
+    </script>
+  </body>
 </html>

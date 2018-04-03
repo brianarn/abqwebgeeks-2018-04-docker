@@ -1,0 +1,17 @@
+version: '3'
+services:
+  reveal:
+    build: ./
+    ports:
+      - '80:80'
+      - '35729:35729'
+    volumes:
+      - nodemodules:/app/node_modules
+      - ./:/app
+    environment:
+      APP_HOST: contain.yourselves
+      APP_PORT: 80
+    extra_hosts:
+      - "contain.yourselves:0.0.0.0"
+volumes:
+  nodemodules: {}

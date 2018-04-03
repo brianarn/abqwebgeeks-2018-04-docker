@@ -52,14 +52,8 @@
           // { src: 'plugin/markdown/markdown.js' },
           { src: 'plugin/notes/notes.js', async: true },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-          { src: 'plugin/notes-server/client.js', async: true }
         ]
       });
-      // Manually injecting livereload for Docker purposes
-      document.write('<script src="http://'
-        + (location.host || 'localhost').split(':')[0]
-        + ':35729/livereload.js?snipver=1"></'
-        + 'script>');
     </script>
   </body>
 </html>

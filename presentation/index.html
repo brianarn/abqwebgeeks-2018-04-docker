@@ -51,6 +51,167 @@
           </section>
         </section>
 
+        <section>
+          <section>
+            <h2>What is Docker even</h2>
+          </section>
+          <section>
+            <h3>Docker is about applications</h3>
+            <ul class="w75">
+              <li class="fragment">Docker is a tool to create and run applications via the use of containers</li>
+              <li class="fragment">Containers are sets of one or more processes that are isolated from the rest of the system</li>
+              <li class="fragment">Containers are based on images</li>
+              <li class="fragment">Images are portable packages of libraries/dependencies of an application</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Containers and Images</h3>
+            <p>OOP Analogy:<br>Images : Classes :: Containers : Instances</p>
+            <p class="pt1">If images are blueprints,<br>containers are creations based on the blueprints.</p>
+          </section>
+          <section>
+            <h3>The Big Question</h3>
+            <p>Containers vs Virtual Machines</p>
+          </section>
+          <section>
+            <h3>What is a Virtual Machine?</h3>
+            <div class="cols">
+              <div class="col">
+                <div class="ba w75 ctr cw">
+                  <div class="ba m1">
+                    <span style="color: black">VM</span>
+                    <div class="ps m1" style="background-color: #c00">
+                      Application
+                    </div>
+                    <div class="ps m1" style="background-color: #900">
+                      Binaries / Libraries
+                    </div>
+                    <div class="ps m1" style="background-color: #600">
+                      Guest OS
+                    </div>
+                  </div>
+                  <div class="ps m1" style="background-color: #00c">
+                    Host OS / Hypervisor
+                  </div>
+                  <div class="ps m1" style="background-color: #006">
+                    Physical Infrastructure
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <p class="tl">A Virtual Machine is a fully encapsulated operating system, running nested within a host operating system of some sort.</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>What is a Container?</h3>
+            <div class="cols">
+              <div class="col">
+                <div class="ba w75 ctr cw">
+                  <div class="cols">
+                    <div class="col ba m1">
+                      <span style="color: black">Container A</span>
+                      <div class="ps m1" style="background-color: #c00">
+                        App A
+                      </div>
+                      <div class="ps m1" style="background-color: #900">
+                        Bins/Libs
+                      </div>
+                    </div>
+                    <div class="col ba m1">
+                      <span style="color: black">Container B</span>
+                      <div class="ps m1" style="background-color: #c00">
+                        App B
+                      </div>
+                      <div class="ps m1" style="background-color: #900">
+                        Bins/Libs
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps m1" style="background-color: #00c">
+                    Docker
+                  </div>
+                  <div class="ps m1" style="background-color: #009">
+                    Host OS
+                  </div>
+                  <div class="ps m1" style="background-color: #006">
+                    Physical Infrastructure
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <p class="tl">A Container is an encapsulation of an application, along with its dependencies, into an isolated execution environment.</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Containers vs VMs</h3>
+            <p>VMs are Houses, Containers are Apartments</p>
+            <div class="cols" style="font-size: 70%">
+              <div class="col">
+                <div class="ba w75 ctr cw">
+                  <div class="ba m1">
+                    <span style="color: black">VM</span>
+                    <div class="ps m1" style="background-color: #c00">
+                      Application
+                    </div>
+                    <div class="ps m1" style="background-color: #900">
+                      Binaries / Libraries
+                    </div>
+                    <div class="ps m1" style="background-color: #600">
+                      Guest OS
+                    </div>
+                  </div>
+                  <div class="ps m1" style="background-color: #00c">
+                    Host OS / Hypervisor
+                  </div>
+                  <div class="ps m1" style="background-color: #006">
+                    Physical Infrastructure
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="ba w75 ctr cw">
+                  <div class="cols">
+                    <div class="col ba m1">
+                      <span style="color: black">Container A</span>
+                      <div class="ps m1" style="background-color: #c00">
+                        App A
+                      </div>
+                      <div class="ps m1" style="background-color: #900">
+                        Bins/Libs
+                      </div>
+                    </div>
+                    <div class="col ba m1">
+                      <span style="color: black">Container B</span>
+                      <div class="ps m1" style="background-color: #c00">
+                        App B
+                      </div>
+                      <div class="ps m1" style="background-color: #900">
+                        Bins/Libs
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ps m1" style="background-color: #00c">
+                    Docker
+                  </div>
+                  <div class="ps m1" style="background-color: #009">
+                    Host OS
+                  </div>
+                  <div class="ps m1" style="background-color: #006">
+                    Physical Infrastructure
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Containers and VMs together</h3>
+            <img class="stretch" style="border: 0" src="img/containers-vms-together.png">
+            <div>Image courtesy <a href="https://www.docker.com/what-container">Docker's "What is a Container" page</a></div>
+          </section>
+        </section>
+
       </div>
     </div>
 

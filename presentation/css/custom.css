@@ -75,22 +75,18 @@
   font-size: 0.75em;
 }
 
+/* Columns */
+.reveal .slides .cols {
+  display: flex;
+}
+
+.reveal .slides .cols .col {
+  flex: 1;
+}
+
 .reveal .slides .subtitle {
   font-size: 2em;
   padding-top: 0.5em;
-}
-
-.reveal .slides .intro img {
-  float: left;
-  border: 0;
-  background: none;
-  box-shadow: none;
-  float: left;
-  vertical-align: middle;
-}
-
-.reveal .slides .intro ul {
-  margin-top: 3em;
 }
 
 /* Custom transitions */
@@ -110,13 +106,33 @@
 }
 
 /* Utilities, inspired by Tachyons */
+.reveal .ba { border: 1px solid black; }
+.reveal .br { border-right: 1px solid black; }
+.reveal .cw { color: white; }
+.reveal .ctr { margin: 0 auto; }
+.reveal .m1 { margin: 1em; }
+.reveal .ps { padding: 0.75em; }
 .reveal .pt1 { padding-top: 1em; }
 .reveal .pr1 { padding-right: 1em; }
 .reveal .pb1 { padding-bottom: 1em; }
+.reveal .tl { text-align: left; }
 .reveal .w50 { width: 50%; }
 .reveal .w75 { width: 75%; }
 
 /* Slide-specific styles */
+.reveal .slides .intro img {
+  float: left;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  float: left;
+  vertical-align: middle;
+}
+
+.reveal .slides .intro ul {
+  margin-top: 3em;
+}
+
 .fragment-images img.fragment {
   width: 100%;
 }

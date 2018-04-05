@@ -81,7 +81,7 @@
                   <div class="ba m1">
                     <span style="color: black">VM</span>
                     <div class="ps m1" style="background-color: #c00">
-                      Application
+                      Application(s)
                     </div>
                     <div class="ps m1" style="background-color: #900">
                       Binaries / Libraries
@@ -209,6 +209,120 @@
             <h3>Containers and VMs together</h3>
             <img class="stretch" style="border: 0" src="img/containers-vms-together.png">
             <div>Image courtesy <a href="https://www.docker.com/what-container">Docker's "What is a Container" page</a></div>
+          </section>
+          <section>
+            <h3>Other vocabulary</h3>
+            <ul>
+              <li>Volumes</li>
+              <li>Exposed ports</li>
+              <li>Networks</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Why does this matter</h2>
+          </section>
+          <section>
+            <h3>Much more disk efficient</h3>
+            <p>Images are much, much smaller than VMs</p>
+          </section>
+          <section>
+            <h3>Images are immutable</h3>
+            <p>An image is a snapshot of everything necessary for an application, and it won't change underneath you</p>
+          </section>
+          <section>
+            <h3>Security</h3>
+            <ul>
+              <li>Containers run in isolation</li>
+              <li>Connections only exposed explicitly</li>
+              <li class="fragment">... though everything runs as root<br>within a container by default</li>
+            </ul>
+          </section>
+          <section>
+            <h3>It eliminates cross-system inconsistencies</h3>
+            <p>Production, staging, QA, and local environments can all run the same image</p>
+          </section>
+          <section>
+            <h2>Why does this matter for local development</h2>
+          </section>
+          <section>
+            <h3>Much more consistent environments</h3>
+            <p>You don't have to install anything on your system except for Docker, which is (now) easy to install across a wide variety of operating systems</p>
+          </section>
+          <section>
+            <h3>Docker Store / Docker Hub</h3>
+            <p>A registry of pre-built images covering a wide swath of open source projects already exist</p>
+          </section>
+          <section>
+            <h3>Ease of<br>Dependency Management</h3>
+            <p>PHP 5.4 vs PHP 7.2? No problem.</p>
+            <p>Ruby 2.2 or Ruby 2.4? No sweat.</p>
+            <p>Node 6.x vs 9.x? Cool cool cool</p>
+          </section>
+          <section>
+            <h3>Customizable</h3>
+            <p>A <code>Dockerfile</code> allows one to use any image as a base, which can be built upon.</p>
+          </section>
+          <section>
+            <h3>Dev team consistency</h3>
+            <p>The new image can be built, tagged, and pushed into a repository, to be shared by everyone!</p>
+          </section>
+          <section>
+            <h3>Orchestration</h3>
+            <p>A Docker Compose configuration can be used to run multiple containers at once.</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>How can I use Docker during Development</h2>
+            <h3 class="subtitle">Lots of Live Demos Here</h3>
+          </section>
+          <section>
+            <h3><code>docker run</code></h3>
+          </section>
+          <section>
+            <h3>Docker Compose</h3>
+            <p>A means of running one or more containers via a configuration file.</p>
+          </section>
+          <section>
+            <h3>What does it look like?</h3>
+            <video class="stretch" src="img/docker-compose-up.mov" controls>
+          </section>
+          <section>
+            <h3>Demo time!</h3>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Where can we go from here?</h2>
+          </section>
+          <section>
+            <h3>Collaboration as a team</h3>
+            <ul>
+              <li>Sharing Dockerfiles</li>
+              <li>Sharing base images</li>
+              <li>Sharing docker-compose configurations</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Automation!</h3>
+            <ul>
+              <li>Continuous Integration</li>
+              <li>Continuous Delivery</li>
+              <li>Kubernetes for production/staging/QA</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Do I need all this?</h3>
+            <p class="fragment">... probably not?</p>
+          </section>
+          <section>
+            <h3>Do what works for you and your team!</h3>
+            <p>But still, know that Docker adoption is rapidly growing, and it's a useful tool for many, many different parts of software development.</p>
           </section>
         </section>
 
